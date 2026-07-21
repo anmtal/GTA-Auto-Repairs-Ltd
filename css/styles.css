@@ -478,12 +478,11 @@ html { overflow-anchor: none; }                 /* stop scroll-anchoring from ji
 /* flat SVG logo mark */
 .brand-logo{box-shadow:none!important;border-radius:0!important;}
 
-/* Logo has light "GTA" lettering — a soft shadow lets it read on the light header/drawer
-   with NO box (the dark footer band needs nothing). */
+/* Clean navy+orange logo reads on the light header on its own — no plate/shadow. */
 .site-header .brand-logo,
-.drawer-head img {
-  filter: drop-shadow(0 1px 1px rgba(8,31,58,.6)) drop-shadow(0 0 1.5px rgba(8,31,58,.55));
-}
+.drawer-head img { filter: none; }
+/* Footer sits on a dark navy band — a faint light glow lifts the navy shield off it. */
+.footer-brand .brand-logo-f { filter: drop-shadow(0 0 3px rgba(255,255,255,.42)); }
 
 /* ===== Check-engine callout band (auto-repair) ===== */
 .ce-band{ display:flex; align-items:center; gap:18px; margin-top:38px; text-decoration:none;
