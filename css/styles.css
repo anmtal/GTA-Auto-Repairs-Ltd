@@ -478,15 +478,11 @@ html { overflow-anchor: none; }                 /* stop scroll-anchoring from ji
 /* flat SVG logo mark */
 .brand-logo{box-shadow:none!important;border-radius:0!important;}
 
-/* Logo legibility: the logo's light "GTA" lettering + white sub-text would
-   wash out on the light header / white drawer. Sit it on a subtle navy plate
-   so it always reads. (Footer logo is already on a dark band — no plate needed.) */
+/* Logo has light "GTA" lettering — a soft shadow lets it read on the light header/drawer
+   with NO box (the dark footer band needs nothing). */
 .site-header .brand-logo,
 .drawer-head img {
-  background: var(--navy-deep);
-  padding: 5px 9px;
-  border-radius: 10px !important;
-  box-shadow: var(--shadow-sm) !important;
+  filter: drop-shadow(0 1px 1px rgba(8,31,58,.6)) drop-shadow(0 0 1.5px rgba(8,31,58,.55));
 }
 
 /* ===== Check-engine callout band (auto-repair) ===== */
